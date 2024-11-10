@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #00f2fe, #3e1c8a);
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc3a0);
+    color: #fff;
+}
+
+header button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5f6d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #ffc3a0;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    color: #ffd700;
+}
+
+#skills ul, #certifications ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#skills li, #certifications li {
+    font-size: 1.1em;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#skills li:before, #certifications li:before {
+    content: "★";
+    font-size: 1.5em;
+    color: #ffcc00;
+    position: absolute;
+    left: -25px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #181818;
+    color: #ddd;
+}
+
+body.dark-mode section {
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
